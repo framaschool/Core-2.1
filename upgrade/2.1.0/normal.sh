@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~/ark-core
+cd ~/kapu-core
 pm2 delete all
 git reset --hard
 git pull
@@ -9,8 +9,8 @@ yarn run bootstrap
 yarn run upgrade
 
 # If you do not use Core Commander you can skip this step.
-cd ~/core-commander
+cd ~/kapushell-corr
 git reset --hard
 git pull
 git checkout master
-bash commander.sh
+bash kapushellcore.sh
